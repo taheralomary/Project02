@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>The CSS Box Model</h1>
+    <p class="intro">
+        Compare how content-box and border-box calculate an element's width.
+    </p>
+
+    <div class="comparison">
+
+        <div class="box-section">
+            <h2>content-box</h2>
+
+            <div class="box content-box">
+                <strong>Width: 300px</strong>
+                <p>Padding and border are added outside the width.</p>
+            </div>
+
+            <p class="description">
+                Total width = 300px + padding + borders
+            </p>
+        </div>
+
+        <div class="box-section">
+            <h2>border-box</h2>
+
+            <div class="box border-box">
+                <strong>Width: 300px</strong>
+                <p>Padding and border are included inside the width.</p>
+            </div>
+
+            <p class="description">
+                Total width = 300px
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

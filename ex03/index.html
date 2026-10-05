@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors & Opacity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Colors</h1>
+    <p class="subtitle">Different ways to define colors in CSS</p>
+
+    <div class="palette">
+
+        <div class="swatch named">
+            <h2>Named</h2>
+            <p>blue</p>
+        </div>
+
+        <div class="swatch hex">
+            <h2>HEX</h2>
+            <p>#ff0000</p>
+        </div>
+
+        <div class="swatch rgb">
+            <h2>RGB</h2>
+            <p>rgb(0, 128, 0)</p>
+        </div>
+
+        <div class="swatch rgba">
+            <h2>RGBA</h2>
+            <p>rgba(255, 165, 0, 0.5)</p>
+        </div>
+
+    </div>
+
+    <h1>Opacity vs RGBA</h1>
+    <p class="subtitle">They look similar, but they behave differently</p>
+
+    <div class="examples">
+
+        <div class="example opacity-example">
+            <h2>opacity: 0.5</h2>
+            <p>The background AND the text become transparent.</p>
+        </div>
+
+        <div class="example rgba-example">
+            <h2>rgba(..., 0.5)</h2>
+            <p>Only the background becomes transparent.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
